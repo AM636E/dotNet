@@ -1,0 +1,4 @@
+D:\GitHub\dotNet\Matrix\bin\Debug\Matrix.exe
+D:\GitHub\dotNet\Matrix\bin\Debug\Matrix.pdb
+D:\GitHub\dotNet\Matrix\obj\x86\Debug\Matrix.exe
+D:\GitHub\dotNet\Matrix\obj\x86\Debug\Matrix.pdb
