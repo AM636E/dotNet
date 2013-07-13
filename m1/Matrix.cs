@@ -38,12 +38,6 @@ namespace Matrix
             }
         }
 
-        public static Matrix operator + ( Matrix a, Matrix v )
-        {
-            return a.Add( v );
-        }
-
-
         public Matrix(Matrix m)
         {
             this.rows = m.rows;

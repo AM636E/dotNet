@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{68A5A62B-DEA8-4031-9CA9-8D14D032FFC2}</ProjectGuid>
+    <ProjectGuid>{7BFA6C46-C424-42ED-9232-23B16C39FE61}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Matrix</RootNamespace>
-    <AssemblyName>Matrix</AssemblyName>
+    <RootNamespace>Exceptions</RootNamespace>
+    <AssemblyName>Exceptions</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -43,15 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algebra.cs" />
-    <Compile Include="Ex.cs" />
-    <Compile Include="Figure.cs" />
-    <Compile Include="Fraction.cs" />
-    <Compile Include="main.cs" />
-    <Compile Include="Matrix.cs" />
+    <Compile Include="FIgure.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmartArr.cs" />
+    <Compile Include="UserEnterAPunctiacialException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
