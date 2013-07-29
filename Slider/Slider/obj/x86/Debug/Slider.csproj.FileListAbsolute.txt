@@ -1,0 +1,4 @@
+D:\GitHub\dotNet\Slider\Slider\bin\Debug\Slider.exe
+D:\GitHub\dotNet\Slider\Slider\bin\Debug\Slider.pdb
+D:\GitHub\dotNet\Slider\Slider\obj\x86\Debug\Slider.exe
+D:\GitHub\dotNet\Slider\Slider\obj\x86\Debug\Slider.pdb

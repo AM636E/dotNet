@@ -1,0 +1,5 @@
+D:\GitHub\dotNet\Delegats\bin\Debug\Delegats.exe
+D:\GitHub\dotNet\Delegats\bin\Debug\Delegats.pdb
+D:\GitHub\dotNet\Delegats\obj\x86\Debug\Delegats.exe
+D:\GitHub\dotNet\Delegats\obj\x86\Debug\Delegats.pdb
+D:\GitHub\dotNet\Delegats\obj\x86\Debug\Delegats.csprojResolveAssemblyReference.cache

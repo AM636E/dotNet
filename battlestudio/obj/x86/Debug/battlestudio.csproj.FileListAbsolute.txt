@@ -1,0 +1,5 @@
+D:\GitHub\dotNet\battlestudio\bin\Debug\battlestudio.exe
+D:\GitHub\dotNet\battlestudio\bin\Debug\battlestudio.pdb
+D:\GitHub\dotNet\battlestudio\obj\x86\Debug\battlestudio.exe
+D:\GitHub\dotNet\battlestudio\obj\x86\Debug\battlestudio.pdb
+D:\GitHub\dotNet\battlestudio\obj\x86\Debug\battlestudio.csprojResolveAssemblyReference.cache

@@ -2,3 +2,4 @@ D:\GitHub\dotNet\Exceptions\bin\Debug\Exceptions.exe
 D:\GitHub\dotNet\Exceptions\bin\Debug\Exceptions.pdb
 D:\GitHub\dotNet\Exceptions\obj\x86\Debug\Exceptions.exe
 D:\GitHub\dotNet\Exceptions\obj\x86\Debug\Exceptions.pdb
+D:\GitHub\dotNet\Exceptions\obj\x86\Debug\Exceptions.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\GitHub\dotNet\Car\bin\Debug\Car.exe
+D:\GitHub\dotNet\Car\bin\Debug\Car.pdb
+D:\GitHub\dotNet\Car\obj\x86\Debug\Car.exe
+D:\GitHub\dotNet\Car\obj\x86\Debug\Car.pdb
+D:\GitHub\dotNet\Car\obj\x86\Debug\Car.csprojResolveAssemblyReference.cache

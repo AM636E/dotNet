@@ -1,0 +1,4 @@
+D:\GitHub\dotNet\Threads\bin\Debug\Threads.exe
+D:\GitHub\dotNet\Threads\bin\Debug\Threads.pdb
+D:\GitHub\dotNet\Threads\obj\x86\Debug\Threads.exe
+D:\GitHub\dotNet\Threads\obj\x86\Debug\Threads.pdb

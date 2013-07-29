@@ -7,22 +7,17 @@ namespace Exceptions
 {
     class Program
     {
+        struct A
+        {
+            Program a;
+
+        }
         static void Main(string[] args)
         {
-            try
-            {
-                while (true)
-                {
-                    if (Console.ReadLine().IndexOfAny(",.;".ToCharArray()) != -1)
-                    {
-                        throw new UserEnterAPunctiacialException("Wrong input data. You should be ashamed");
-                    }
-                }
-            }
-            catch( UserEnterAPunctiacialException e )
-            {
-                Console.WriteLine(e.Message);
-            }
+
+            SmartArray w = new SmartArray(20);
+         //   Console.WriteLine( a.GetEnumerator() );
+            //Console.WriteLine);
         }
     }
 }
