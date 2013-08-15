@@ -47,7 +47,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="Holl.cs" />
     <Compile Include="IMovable.cs" />
-    <Compile Include="IRIght.cs" />
+    <Compile Include="IMoveCanvas.cs" />
     <Compile Include="IStatic.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="Point.cs" />

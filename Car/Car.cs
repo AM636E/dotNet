@@ -39,12 +39,24 @@ namespace Car
 
         public void MoveRight()
         {
-             this.matrix = new Car(matrix[0, 0].Row, matrix[0, 0].Col + 1).matrix;       
+            // this.matrix = new Car(matrix[0, 0].Row, matrix[0, 0].Col + 1).matrix;
+            ActWithMatrix(delegate(Point p)
+            {
+                p.Col++;
+
+                return p;
+            });
         }
 
         public void MoveLeft()
         {
-            this.matrix = new Car(matrix[0, 0].Row, matrix[0, 0].Col - 1).matrix;
+            //this.matrix = new Car(matrix[0, 0].Row, matrix[0, 0].Col - 1).matrix;
+            ActWithMatrix(delegate(Point p)
+            {
+                p.Col--;
+
+                return p;
+            });
         }
     }
 }

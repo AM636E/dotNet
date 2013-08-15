@@ -2,7 +2,7 @@
 
 namespace Car
 {
-    class Road: Matrix
+    class Road : Matrix, IMoveCanvas
     {
         private const char ROAD_LETTER = ' ';
         private const char ROAD_SEPARATOR = '|';
@@ -20,13 +20,13 @@ namespace Car
         {
             get { return ROAD_SEPARATOR; }
         }
-        
+
         public Road(int rows, int cols) :
             base(rows, cols, ROAD_LETTER)
         {
             var c = cols / 2;
 
-            for (var i = 0; i < rows; i+=2)
+            for (var i = 0; i < rows; i += 2)
             {
                 matrix[i, c].Ch = ROAD_SEPARATOR;
             }
@@ -36,7 +36,7 @@ namespace Car
         {
             var c = Cols / 2;
 
-            for (var i = 0; i < Rows; i ++)
+            for (var i = 0; i < Rows; i++)
             {
                 if (matrix[i, c].Ch == ROAD_SEPARATOR)
                 {
@@ -52,33 +52,76 @@ namespace Car
             RoadMoved(this, EventArgs.Empty);
         }
 
-        public bool IsCanMoveLeft(Matrix m)
+        public MoveStage IsCanMoveLeft(Matrix m)
         {
-            Point a;// = new Point();
+            Point tmp;//see is can move down
+
             for (var i = 0; i < m.Rows; i++)
             {
-                a = m[i, 0];
-
-                //if (a.Col > 0 && this.matrix[a.Row, a.Col] != a.Ch)
-                //{
-
- //               }
+                tmp = m[i, 0];
+                if (tmp.Col - 1 < 0)
+                {
+                    return MoveStage.OUT_OF_RANGE;
+                }
+                if (this[tmp.Row, tmp.Col - 1].Ch != ROAD_LETTER)
+                {
+                    return MoveStage.COLLISION;
+                }
             }
 
-            return true;
+            return MoveStage.OK;
         }
 
+        public MoveStage IsCanMoveRight(Matrix m)
+        {
+            Point tmp;//see is can move left
+
+            for (var i = 0; i < m.Rows; i++)
+            {
+                tmp = m[i, 0];
+                if (tmp.Col + 1 >= this.Cols)
+                {
+                    return MoveStage.OUT_OF_RANGE;
+                }
+                if (this[tmp.Row, tmp.Col - 1].Ch != ROAD_LETTER)
+                {
+                    return MoveStage.COLLISION;
+                }
+            }
+
+            return MoveStage.OK;
+        }
+
+        public MoveStage IsCanMoveDown(Matrix m)
+        {
+            Point tmp;//will hold current point assigned in cycle. used for improoving performance ( - indexing operations )
+
+            for (var i = 0; i < m.Rows; i++)
+            {
+                tmp = m[i, 0];
+                if (tmp.Row >= this.Rows - 1)
+                {
+                    return MoveStage.OUT_OF_RANGE;
+                }
+                if (this[tmp.Row + 1, tmp.Col].Ch != ROAD_LETTER)
+                {
+                    return MoveStage.COLLISION;
+                }
+            }
+
+            return MoveStage.OK;
+        }
 
         //event handlers
         public EventHandler CarMovedLeftHandler()
         {
             return delegate(Object sender, EventArgs args)
-            { 
+            {
                 Console.WriteLine("Event");
                 var car = (sender as Car);
                 var car_0 = car[0, 0];
-                if (car_0.Col >= 0 )
-                {                    
+                if (car_0.Col >= 0)
+                {
                     car.EraseFrom(this);
                     car.MoveLeft();
                     car.WriteTo(this);

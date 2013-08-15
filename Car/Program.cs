@@ -9,7 +9,15 @@ namespace Car
     {
         static void Main(string[] args)
         {
-            Game.Start();
+            try
+            {
+                Game.Start();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
         }
     }
 }

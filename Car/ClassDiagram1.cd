@@ -11,16 +11,17 @@
   <Class Name="Car.Matrix" Collapsed="true">
     <Position X="3" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAEAACAAACKAACAAAAAAgAAAAAAAEAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAEAACAAACKAACAAAAAAgAAAAAIAEAAA=</HashCode>
       <FileName>Matrix.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Car.Road" Collapsed="true">
+  <Class Name="Car.Road">
     <Position X="1.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAQgAMAAAgICAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAQgAMICAgICCAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Road.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
   </Class>
   <Class Name="Car.Sprite" Collapsed="true">
     <Position X="5" Y="2.25" Width="1.5" />
@@ -29,23 +30,31 @@
       <FileName>Sprite.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Car.Program" Collapsed="true">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+  <Class Name="Car.Program">
+    <Position X="8.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Car.Holl">
-    <Position X="6.25" Y="4" Width="1.5" />
+    <Position X="6.5" Y="4" Width="1.5" />
+    <InheritanceLine Type="Car.Sprite" ManuallyRouted="true">
+      <Path>
+        <Point X="5.75" Y="2.941" />
+        <Point X="5.75" Y="3.625" />
+        <Point X="7.25" Y="3.625" />
+        <Point X="7.25" Y="4" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAABAIAAAAEAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAAABAIAAAAEAAAAAAAAAQEAAAAAAAAA=</HashCode>
       <FileName>Holl.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Right" Position="0.1" />
   </Class>
   <Struct Name="Car.Point" Collapsed="true">
-    <Position X="11" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="2" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
       <Compartment Name="Properties" Collapsed="true" />
@@ -57,24 +66,17 @@
     </TypeIdentifier>
   </Struct>
   <Interface Name="Car.IMovable" Collapsed="true">
-    <Position X="12.75" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAA=</HashCode>
       <FileName>IMovable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Car.IStatic" Collapsed="true">
-    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>IStatic.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Car.IRight" Collapsed="true">
-    <Position X="14.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>IRIght.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

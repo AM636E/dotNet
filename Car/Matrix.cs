@@ -5,6 +5,8 @@ namespace Car
     class Matrix
     {
         protected Point[,] matrix;
+
+        public delegate Point Action(Point p);
         
         public Matrix() { }
 
@@ -88,6 +90,19 @@ namespace Car
                 }
                 Console.Write('\n');
             }
+            ; ; ; ; ; ; ; ; ; ; ; ; ;
+          //  Console.ReadKey();
+        }
+
+        public void ActWithMatrix(Action action)
+        {
+            for (var i = 0; i < Rows; i++)
+            {
+                for (var j = 0; j < Cols; j++)
+                {
+                    matrix[i, j] = action(matrix[i, j]);
+                }
+            }
         }
 
         public void WriteTo(Matrix target)
@@ -104,6 +119,10 @@ namespace Car
                     target[matrix[i, j].Row, matrix[i, j].Col] = matrix[i, j];
                 }
             }
+            //target.ActWithMatrix(delegate(Point p)
+            //{
+
+            //});
         }
         public void EraseFrom(Matrix r)
         {

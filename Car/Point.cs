@@ -10,6 +10,8 @@ namespace Car
 
         public Point(ConsoleColor color) : this() { Color = color; }
 
+        public Point(Point copy) { this = new Point(); this.row = copy.row; this.col = copy.col; Color = copy.Color; }
+
         public void Print()
         {
             Console.ForegroundColor = Color;
