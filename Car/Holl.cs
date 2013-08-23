@@ -11,7 +11,7 @@ namespace Car
 
         //events
         public event EventHandler HollMoveEvent;
-        public event EventHandler HollIsDownEvent;
+       // public event EventHandler HollIsDownEvent;
         private int p;
 
         public Holl() :

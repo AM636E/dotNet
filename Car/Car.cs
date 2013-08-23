@@ -9,10 +9,7 @@ namespace Car
     {
         const char CAR_LETTER = 'O';
 
-        //events
-        public event EventHandler MoveLeftEvent;
-        public event EventHandler MoveRightEvent;
-
+        
         public Car() :
             base(1, 1, CAR_LETTER)
         {

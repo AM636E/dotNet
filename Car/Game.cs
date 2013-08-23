@@ -146,6 +146,7 @@ namespace Car
                     case MoveStage.COLLISION:
                         {
                             //car.EraseFrom(road);
+                           
                             break;
                         }
                     case MoveStage.OUT_OF_RANGE:

@@ -90,8 +90,6 @@ namespace Car
                 }
                 Console.Write('\n');
             }
-            ; ; ; ; ; ; ; ; ; ; ; ; ;
-          //  Console.ReadKey();
         }
 
         public void ActWithMatrix(Action action)
@@ -119,10 +117,6 @@ namespace Car
                     target[matrix[i, j].Row, matrix[i, j].Col] = matrix[i, j];
                 }
             }
-            //target.ActWithMatrix(delegate(Point p)
-            //{
-
-            //});
         }
         public void EraseFrom(Matrix r)
         {

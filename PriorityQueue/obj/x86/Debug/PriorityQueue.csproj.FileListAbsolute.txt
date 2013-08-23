@@ -1,0 +1,5 @@
+D:\GitHub\dotNet\PriorityQueue\bin\Debug\PriorityQueue.exe
+D:\GitHub\dotNet\PriorityQueue\bin\Debug\PriorityQueue.pdb
+D:\GitHub\dotNet\PriorityQueue\obj\x86\Debug\PriorityQueue.exe
+D:\GitHub\dotNet\PriorityQueue\obj\x86\Debug\PriorityQueue.pdb
+D:\GitHub\dotNet\PriorityQueue\obj\x86\Debug\PriorityQueue.csprojResolveAssemblyReference.cache
