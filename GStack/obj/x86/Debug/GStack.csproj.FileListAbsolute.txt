@@ -1,0 +1,5 @@
+D:\GitHub\dotNet\GStack\bin\Debug\GStack.exe
+D:\GitHub\dotNet\GStack\bin\Debug\GStack.pdb
+D:\GitHub\dotNet\GStack\obj\x86\Debug\GStack.exe
+D:\GitHub\dotNet\GStack\obj\x86\Debug\GStack.pdb
+D:\GitHub\dotNet\GStack\obj\x86\Debug\GStack.csprojResolveAssemblyReference.cache

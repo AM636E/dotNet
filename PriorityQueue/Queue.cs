@@ -7,13 +7,17 @@ namespace PriorityQueue
 {
     class Queue<T>
     {
-        Item<T>[] array;
+        protected Item<T>[] array;
+        private Taxi[] array_2;
 
         public Queue() { array = new Item<T>[1]; }
         
         public Queue(Item<T>[] array)
         {
-            this.array = array;
+            for (var i = 0; i < array.Length; i++)
+            {
+                this.Push(array[i]);
+            }
         }
 
         protected int GetPos(Item<T> value)
@@ -60,8 +64,7 @@ namespace PriorityQueue
             }
             else
             {
-               // throw new IndexOutOfRangeException();
-                Console.WriteLine("Bad");
+                throw new IndexOutOfRangeException();
             }
         }
 
@@ -75,6 +78,7 @@ namespace PriorityQueue
             }
 
             array[array.Length - 1] = first;
+            this.Push(first);
 
             return first;
         }

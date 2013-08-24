@@ -5,10 +5,10 @@ using System.Text;
 
 namespace PriorityQueue
 {
-    struct Item<T>
+    class Item<T>
     {
-        T value;
-        int priority;
+        protected T value;
+        protected int priority;
 
         public Item(T value, int priority)
         {
@@ -21,6 +21,8 @@ namespace PriorityQueue
             get { return priority; }
             set { priority = value; }
         }
+
+        public T GetValue { get { return value; } }
 
         public override System.String ToString()
         {
